@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>पनवेल वाहन विभाग - Insurance for a Better Life</title>
+
+  <link rel="shortcut icon" href="assets/images/image.png">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;800;900&family=Rubik:wght@400;500;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-circle-one.png">
+  <link rel="preload" as="image" href="./assets/images/hero-circle-two.png">
+
+</head>
+
+<body id="top">
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="assets/images/image.png" alt="Logo" style="margin : 10px">
+
+        <span class="span">पनवेल वाहन विभाग</span>
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-sharp" aria-hidden="true"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link active" data-nav-link>Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+
+          <li>
+            <a href="#class" class="navbar-link" data-nav-link>Services</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link" data-nav-link>Contact Us</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <a href="#" class="btn btn-secondary" id="loginBtn">Login</a>
+
+      <div class="overlay" id="overlay">
+        <div class="form-container">
+          <button class="close-button" id="closeButton">&#10005;</button>          
+          <h2>Login</h2>
+          <form id="loginForm" method="POST">
+            <div style="margin-bottom: 20px;">
+              <select id="loginType" name="login_type" onchange="updateFormAction()" style="font-family: Arial, sans-serif; font-size: 16px; padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
+                <option value="master">Master Login</option>
+                <option value="user">User Login</option>
+              </select>
+            </div>
+            
+            <input type="phone" name="phone" id="phone" placeholder="Phone Number" required>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <button type="submit" id="loginButton">Login</button>
+          </form>
+        </div>
+      </div>
+      
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+
+      <section class="section hero bg-dark has-after has-bg-image" id="home" aria-label="hero" data-section
+        style="background-image: url('./assets/images/hero-bg.png')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">
+              <strong class="strong">The Best</strong>Vehicle Asset
+            </p>
+
+            <h1 class="h1 hero-title">Our Service has no Speed Limits</h1>
+
+            <p class="section-text">
+              An insurance app enables quick and easy communication between an insurance company and its customers.<br>It automates tedious manual processes and<br>eliminates paperwork.
+            </p>
+
+            <a href="#" class="btn btn-primary">Get Started</a>
+
+          </div>
+
+          <div class="hero-banner">
+
+            <img src="./assets/images/hero-banner.png" width="660" height="753" alt="hero banner" class="w-100">
+
+            <img src="./assets/images/about-circle-twos.png" width="666" height="666" aria-hidden="true" alt=""
+              class="circle circle-2">
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <div class="about-banner has-after">
+            <img src="./assets/images/about-banner.png" width="660" height="648" loading="lazy" alt="about banner"
+              class="w-100">
+
+            <img src="./assets/images/fitness.png" width="650" height="154" loading="lazy" alt="fitness"
+              class="abs-img w-100">
+          </div>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">About Us</p>
+
+            <h2 class="h2 section-title">Welcome To Our Insurance Portal</h2>
+
+            <p class="section-text">
+              Our Portal is designed to Manage Vehicle Insurance details added to the Dashboard.You can add every information related to your
+              vehicle and it will be stored to our dashboard.
+            </p>
+
+            <p class="section-text">
+              Also on the expiry of any of your Insurance,
+              Our Portal will send you regualr Alerts which will help you Renew the Insurance with ease.
+              If any Query arises,feel free to contact us as we are available 24 x 7 !
+            </p>
+
+            <div class="wrapper">
+
+              <div class="about-coach">
+
+                <figure class="coach-avatar">
+                  <img src="./assets/images/about-coach.jpg" width="65" height="65" loading="lazy" alt="Trainer">
+                </figure>
+
+                <div>
+                  <h3 class="h3 coach-name">Vehicle Inspector</h3>
+
+                  <p class="coach-title">पनवेल वाहन विभाग</p>
+                </div>
+
+              </div>
+
+              <a href="#" class="btn btn-primary">Explore More</a>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+      <section class="section video" aria-label="video">
+        <div class="container">
+
+          <div class="video-card has-before has-bg-image"
+            style="background-image: url('./assets/images/video-banner.jpg')">
+
+            <h2 class="h2 card-title">Explore   पनवेल वाहन विभाग </h2>
+
+            <button class="play-btn" aria-label="play video">
+              <ion-icon name="play-sharp" aria-hidden="true"></ion-icon>
+            </button>
+
+            <a href="#" class="btn-link has-before">Watch More</a>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section class bg-dark has-bg-image" id="class" aria-label="class"
+        style="background-image: url('./assets/images/classes-bg.png')">
+        <div class="container">
+
+          <p class="section-subtitle">Requirements</p>
+
+          <h2 class="h2 section-title text-center">A Valuable Asset for every Vehicle</h2>
+
+          <ul class="class-list has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="./assets/images/class-1.jpg" width="416" height="240" loading="lazy" alt="Weight Lifting"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/class-icon-1.png" width="52" height="52" aria-hidden="true" alt=""
+                      class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Vehicle Insurance</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    To Check insurance status of your<br>vehicle log onto the official website<br>and 
+                    enter your vehicleregistrations details 
+                  </p>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Check Status of your Vehicle Insurance</p>
+                    </div>
+                    <span class="progress-value"><a href="https://parivahan.gov.in/parivahan//node/1978"> Vehicle Insurance</a></span>
+                  </div>
+                  <style>
+                    .progress-value a {
+                      color: #088F8F;
+                    }
+                  </style>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="./assets/images/class-2.jpg" width="416" height="240" loading="lazy" alt="Cardio & Strenght"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/class-icon-2.png" width="52" height="52" aria-hidden="true" alt=""
+                      class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">PUC Certificate</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    To download your PUC Certificate<br> log onto the official website and 
+                    enter your application details
+                  </p><br>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Download your PUC Certificate</p>
+                    </div>
+                    <span class="progress-value"><a href="https://puc.parivahan.gov.in/puc/"> PUC Application</a></span>
+                  </div>
+                  <style>
+                    .progress-value a {
+                      color: #088F8F;
+                    }
+                  </style>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="class-card">
+
+                <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                  <img src="./assets/images/class-3.jpg" width="416" height="240" loading="lazy" alt="Power Yoga"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="title-wrapper">
+                    <img src="./assets/images/class-icon-3.png" width="52" height="52" aria-hidden="true" alt=""
+                      class="title-icon">
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Fitness Certificate</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-text">
+                    To download your Vehicle Fitness Certificate log onto the official website and 
+                    enter your application details
+                  </p><br>
+
+                  <div class="card-progress">
+
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Download your Fitness Certificate :</p>
+                    </div>
+                    <span class="progress-value"><a href="https://vahan.parivahan.gov.in/vahanservice/vahan/ui/onlineservice/form_print_fitness_cert.xhtml"> Fitness Certificate</a></span>
+                  </div>
+                </div>
+                <style>
+                  .progress-value a {
+                    color: #088F8F;
+                  }
+                </style>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="section blog" id="blog" aria-label="blog">
+        <div class="container">
+
+          <p class="section-subtitle">Our News</p>
+
+          <h2 class="h2 section-title text-center">Latest Blog Feed</h2>
+
+          <ul class="blog-list has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+                  <img src="./assets/images/blog-1.jpg" width="440" height="270" loading="lazy"
+                    alt="Going to the gym for the first time" class="img-cover">
+
+                  <time class="card-meta" datetime="2022-07-07">7 July 2022</time>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Passengers coverage in Third party Insurance</a>
+                  </h3>
+
+                  <p class="card-text">
+                    A passenger assistance cover is specifically designed to offer coverage to the individual who is sitting behind the rider on the insured vehicle from bodily injuries 
+                    or death that can happen due to any mishap or accident.
+                  </p>
+
+                  <a href="#" class="btn-link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+                  <img src="./assets/images/blog-2.jpg" width="440" height="270" loading="lazy"
+                    alt="Parturient accumsan cacus pulvinar magna" class="img-cover">
+
+                  <time class="card-meta" datetime="2022-07-07">10 September 2021</time>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Airbags and Car Insurance Policies</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Airbags are not generally covered by third-party insurance, whereas up to 50% of the airbags' value will be covered by comprehensive insurance.
+                  </p><br><br>
+
+                  <a href="#" class="btn-link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+                  <img src="./assets/images/blog-3.jpg" width="440" height="270" loading="lazy"
+                    alt="Risus purus namien parturient accumsan cacus" class="img-cover">
+
+                  <time class="card-meta" datetime="2022-07-07">9 August 2022</time>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Pay as you drive Insurance and its Clauses</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Pay as you drive insurance plan allows a policyholder to save up on their own damage premium. It is a kind of comprehensive car 
+                    insurance plan that helps a policyholder reduce his/her premium based on the usage of the car.
+                  </p>
+
+                  <a href="#" class="btn-link has-before">Read More</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+  <footer class="footer">
+
+    <div class="section footer-top bg-dark has-bg-image" style="background-image: url('./assets/images/footer-bg.png')">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="assets/images/image.png" alt="Logo" style="margin-top: -30px; width: 90px ;height: auto;">
+
+            <span class="span" style="margin-top: -20px; margin-left: 20px; font-size: 2.5rem;">पनवेल वाहन विभाग</span>
+          </a>
+
+          <p class="footer-brand-text">
+            At <b>पनवेल वाहन विभाग</b> ,We help you to renew your insurance before the expiry date which helps you from paying an additional fine.<br>
+            Expiry Alerts makes sure that you pay insurance on time.
+          </p>
+
+          <div class="wrapper">
+
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Our Links</p>
+          </li>
+
+          <li>
+            <a href="#home" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#class" class="footer-link">Classes</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="footer-link">Blog</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Contact Us</p>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="location" aria-hidden="true"></ion-icon>
+            </div>
+
+            <address class="address footer-link">
+              New Panvel , Maharashtra
+            </address>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="call" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div>
+              <a href="tel:18001213637" class="footer-link">1800-121-3637</a>
+
+              <a href="tel:+915552348765" class="footer-link">+91 555 234-8765</a>
+            </div>
+          </li>
+
+          <li class="footer-list-item">
+            <div class="icon">
+              <ion-icon name="mail" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div>
+              <a href="mailto:info@fitlife.com" class="footer-link">Mail ID</a>
+
+              <a href="mailto:services@fitlife.com" class="footer-link">Mail ID</a>
+            </div>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title has-before">Our Newsletter</p>
+          </li>
+
+          <li>
+            <form action="" class="footer-form">
+              <input type="email" name="email_address" aria-label="email" placeholder="Email Address" required
+                class="input-field">
+
+              <button type="submit" class="btn btn-primary" aria-label="Submit">
+                <ion-icon name="chevron-forward-sharp" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+          </li>
+
+          <li>
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 <b>पनवेल वाहन विभाग.</b> All Rights Reserved By <a href="#" class="copyright-link"><b>पनवेल वाहन विभाग.</b></a>
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link has-before">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link has-before">Terms & Conditions</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up-sharp" aria-hidden="true"></ion-icon>
+  </a>
+
+<script>
+const loginBtn = document.getElementById('loginBtn');
+const overlay = document.getElementById('overlay');
+const closeButton = document.getElementById('closeButton');
+const forms = document.querySelectorAll('.form-container form');
+const signupLink = document.getElementById('signupLink');
+const loginLink = document.getElementById('loginLink');
+
+
+loginBtn.addEventListener('click', openOverlay);
+closeButton.addEventListener('click', closeOverlay);
+signupLink.addEventListener('click', showSignupForm);
+loginLink.addEventListener('click', showLoginForm);
+
+
+function openOverlay() {
+  overlay.style.display = 'block';
+  forms[0].classList.add('active');
+}
+
+
+function closeOverlay() {
+  overlay.style.display = 'none';
+  forms.forEach(form => {
+    form.classList.remove('active');
+  });
+}
+
+
+function showSignupForm() {
+  forms[0].classList.remove('active');
+  forms[1].classList.add('active');
+}
+
+
+function showLoginForm() {
+  forms[1].classList.remove('active');
+  forms[0].classList.add('active');
+}
+
+  </script>
+
+  <script>
+    function updateFormAction() {
+      var loginType = document.getElementById("loginType").value;
+      var loginForm = document.getElementById("loginForm");
+      var loginButton = document.getElementById("loginButton");
+      
+      if (loginType === "master") {
+        loginForm.action = "login.php?login_type=master";
+        loginButton.innerText = "Master Login";
+      } else if (loginType === "user") {
+        loginForm.action = "login.php?login_type=user";
+        loginButton.innerText = "User Login";
+      }
+    }
+  </script>
+  
+
+
+  <script src="./assets/js/script.js" defer></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
